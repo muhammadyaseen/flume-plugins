@@ -20,7 +20,7 @@ public class ProbeReportEventAvroSerializer extends AbstractAvroEventSerializer<
 	private static final Schema SCHEMA = new Schema.Parser().parse(
 			"{ \"type\": \"record\", \"name\": \"ProbeReportEvent\", \"namespace\": \"io.muhammadyaseen.github.flumeplugins.event\", \"fields\": [" +
 				    "{ \"name\": \"asset_id\",            \"type\": \"string\", \"default\": \"\" }," +
-				    "{ \"name\": \"probe_time\",          \"type\": \"long\", \"default\": 0 }," +
+				    "{ \"name\": \"probe_time\",          \"type\": \"string\", \"default\": \"\" }," +
 				    "{ \"name\": \"serviceA_check\",      \"type\": \"int\", \"default\": 0 }," +
 				    "{ \"name\": \"serviceB_check\",      \"type\": \"int\", \"default\": 0 }," +
 				    "{ \"name\": \"serviceC_check\",      \"type\": \"int\", \"default\": 0 } ] }");

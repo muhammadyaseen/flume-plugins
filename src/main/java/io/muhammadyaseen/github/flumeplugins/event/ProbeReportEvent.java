@@ -18,7 +18,7 @@ public class ProbeReportEvent implements Event, Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private	String	asset_id;
-	private	long	probe_time;
+	private	String	probe_time;
 	private	int	serviceA_check;
 	private	int	serviceB_check;
 	private	int	serviceC_check;
@@ -72,7 +72,7 @@ public class ProbeReportEvent implements Event, Serializable {
 		
 	        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	        
-	        Date d = df.parse(added_on);
+	        Date d = df.parse(probe_time);
 	        
 	        long ts = (long)d.getTime(); // get epoch time in milli-seconds
 	        
