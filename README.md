@@ -37,6 +37,8 @@ Agent configuration files are in `./conf` directory
 * TrackingErrorEventModel
 
 ## Flume Event Flow
+```
+
 
            +-------------+   +-------------+   +---------------+   +-------------+   +-------------+
  Events    | HTTP Source |   |Interceptor  |   |File / Memory  |   |Avro         |   |Hadoop / HDFS|
@@ -49,6 +51,7 @@ Agent configuration files are in `./conf` directory
                                                                     | Event Parser|
                                                                     | (optional)  |
                                                                     +-------------+
+```
 (ASCII diagram created via: [ASCIIFlow](http://asciiflow.com/))
 
 ## Dev Environment Setup
