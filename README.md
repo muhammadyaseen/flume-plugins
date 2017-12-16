@@ -1,11 +1,16 @@
 # Flume Pluggables (aka Plugins)
 [![Build Status](https://travis-ci.org/muhammadyaseen/flume-plugins.svg?branch=master)](https://travis-ci.org/muhammadyaseen/flume-plugins)
 
+Contact info at [my website](http://muhammadyaseen.github.io) or [@nisaydhm](www.twitter.com/nisaydhm)
+
 ## About Apache Flume
 > "Apache Flume is a distributed, reliable, and available system for efficiently collecting, aggregating and moving large amounts of log data from many different sources to a centralized data store." 
 
 
 (from [Flume User Guide](https://flume.apache.org/FlumeUserGuide.html)).
+
+## Dev Environment Setup
+If you want to setup Eclipse to make changes and compile yourself, check my post for [How to write Custom Flume components](https://yaseenx.wordpress.com/2017/09/10/developing-custom-apache-flume-components/)
 
 ## About this repo
 Flume is a flexible piece of software and allows plugging in custom code for many of its components. Most probable candidates for custom code are Flume's Interceptors, Event Handlers (for [HTTP Source](https://flume.apache.org/FlumeUserGuide.html#http-source)), and Serializers (e.g. Avro Serializer). Less likely but still important components that can be swapped with custom implementations are Channel Selectors, JMS Message Converters, and custom Sink Processors.
@@ -58,6 +63,3 @@ Agent configuration files are in `./conf` directory
                                                                     +-------------+
 ```
 (ASCII diagram created via: [ASCIIFlow](http://asciiflow.com/))
-
-## Dev Environment Setup
-This code can be bundled in a single `.jar` file. If you want to setup Eclipse to make changes and compile yourself, check my post for [How to write Custom Flume components](#)
